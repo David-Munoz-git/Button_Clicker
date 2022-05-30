@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Button Clicker</title>
+</head>
+<body>
+    <div class="body-container">
+        <!--nav bar start -->
+        <div class="nav-bar">
+            <h1>Dojonary</h1>
+            <div>
+                <input class="search-bar" type="text" placeholder="search">
+            </div>
+            <div>
+                <button onclick="change(this)" class="Login">Login</button>
+            </div>
+        </div>
+        <!-- nav bar end -->
+        <div class="main-container">
+            <!-- left block start -->
+            <div class="left-block">
+                <!-- top block start -->
+                <div class="top-block">
+                    <div class="ninja-top">
+                        <h2>ninja</h2>
+                        <p>noun</p>
+                        <p>Plural: ninjas</p>
+                        <button onclick="alert('ninja was liked')" id="top-like">13 likes</button>
+                    </div>
+                    <div class="definition">
+                        <p>A practitioner skilled in the <a href="#">Japanese<a> art of <a href="#">ninjutsu</a></p>
+                    </div>
+                </div>
+                <!-- top block end -->
+                <!-- bottom block start -->
+                <div class="bottom-block">
+                    <div class="ninja-bottom">
+                        <h2>ninja</h2>
+                        <p>noun</p>
+                        <p>Plural: ninjas</p>
+                        <button id="bottom-like" onclick="addto()">37 likes</button>
+                    </div>
+                    <div class="bottom-definition">
+                        <p class="A">A <a href="#">Programmer<a>who breaks down problems with <a href="#">zen</a>-like focus</p>
+                    </div>
+                </div>
+                <!-- bottom block end -->
+            </div>
+            <!-- left block end -->
+            <!-- right block start -->
+            <div>
+                <div class="right-block">
+                    <p>Dojonary is defined by</p>
+                    <p id="you">you</p>
+                    <button onclick="display(this)" class="button-Definition" >Add Definition</button>
+                </div>
+            </div>
+            <!-- right block end -->
+        </div>
+        
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
